@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "PurgeCSS",
+      "type": "shell",
+      "command": "npx purgecss --css responsive.css animate.min.css bootstrap.min.css default.css font-awesome.min.css lightcase.css meanmenu.css nice-select.css odometer.css owl.carousel.min.css --content index.html about.html careers.html contact.html service.html service-details.html --output cleaned_css/",
+      "problemMatcher": []
+    }
+  ]
+}

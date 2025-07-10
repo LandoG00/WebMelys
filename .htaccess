@@ -1,0 +1,9 @@
+# 1. Proteger archivos sensibles como .env
+<Files ".env">
+  Require all denied
+</Files>
+
+# 2. Forzar el uso de HTTPS (lo que ya tenías)
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

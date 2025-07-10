@@ -1,0 +1,12 @@
+{
+  "name": "melys-janitorial-site",
+  "version": "1.0.0",
+  "description": "Sitio web para Melys Janitorial Services",
+  "scripts": {
+    "build:css": "node optimize.js"
+  },
+  "devDependencies": {
+    "concat": "^1.0.3",
+    "purgecss": "^6.0.0"
+  }
+}
